@@ -23,19 +23,9 @@ public class PostsController {
         return postsRepo.findAll();
     }
 
-    @GetMapping("/all-posts")
-    public List<Posts> allPosts(){
-        return postsRepo.findAll();
-    }
-
     //Create Post
     @PostMapping
     public Posts createPost(@RequestBody Posts post){
-        return postsRepo.save(post);
-    }
-
-    @PostMapping("/all-posts")
-    public Posts postCreate(@RequestBody Posts post){
         return postsRepo.save(post);
     }
 
