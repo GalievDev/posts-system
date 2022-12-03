@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom'
 import PostsServices from "../services/PostsServices";
 import PostCreateComponent from './PostCreateComponent';
 
@@ -23,12 +22,14 @@ const AllPostsComponent = () => {
 		})
 	}
 	return(
-				<div className="container">
-					<PostCreateComponent />
-					{
-					posts.map(
-						post =>
-					<Card border="dark" style={{ width: '40rem' }} class="card">
+	<div>
+	    <div className="container col-md-6">
+	    <PostCreateComponent />
+		</div>
+		{
+            posts.map(
+				post =>
+				    <Card border="dark" style={{ width: '40rem' }} class="card">
 					<Card.Img variant="top" src="holder.js/470px590" src={post.imgUrl}/>
 					<Card.Body>
 						<Card.Title>{post.title}</Card.Title>
@@ -37,9 +38,9 @@ const AllPostsComponent = () => {
 						</Card.Text>
 					</Card.Body>
 				</Card>
-				)
-				}
-			</div>
+			)
+		}
+	</div>
 	);
 }
 

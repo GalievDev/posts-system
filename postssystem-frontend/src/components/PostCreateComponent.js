@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Link, useNavigate, useParams } from 'react-router-dom';
+import {useNavigate, useParams } from 'react-router-dom';
 import PostsServices from '../services/PostsServices';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -67,7 +67,7 @@ const PostCreateComponent = () => {
 	
 	return (
 			 <div className = "container">
-			 <Button variant='dark' onClick={handleShow}> Create Post</Button>
+			 <span className="row"><Button variant='dark' onClick={handleShow}> Create Post</Button> </span>
 					<Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>

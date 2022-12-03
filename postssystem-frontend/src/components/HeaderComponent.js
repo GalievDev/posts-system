@@ -17,7 +17,7 @@ return (
       >
         <i class="fas fa-bars"></i>
       </button>
-			<div class="text-light">Posts Controll</div>
+			<h1 class="brand text-light">Posts Controll</h1>
       <div class="collapse navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item active">
