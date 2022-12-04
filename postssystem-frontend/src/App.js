@@ -5,6 +5,7 @@ import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
 import PostCreateComponent from './components/PostCreateComponent';
 import AllPostsComponent from './components/AllPostsComponent';
+import PostUpdateComponent from './components/PostUpdateComponent';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
 						<Route path='/' element = {<ListPostsComponent/>} />
 						<Route path='/posts' element = {<ListPostsComponent/>} />
 						<Route path='/create-post' element = {<PostCreateComponent/>} />
-						<Route path = "/edit-post/:id" element = {<PostCreateComponent/>} />
+						<Route path = "/edit-post/:id" element = {<PostUpdateComponent/>} />
 						<Route path = "/all-posts" element = {<AllPostsComponent/>} />
 					</Routes>
 				</div>
