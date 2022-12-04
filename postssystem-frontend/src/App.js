@@ -13,7 +13,7 @@ function App() {
 				<HeaderComponent />
 				<div className="container">
 					<Routes>
-						<Route path='/' exact element = {<ListPostsComponent/>} />
+						<Route path='/' element = {<ListPostsComponent/>} />
 						<Route path='/posts' element = {<ListPostsComponent/>} />
 						<Route path='/create-post' element = {<PostCreateComponent/>} />
 						<Route path = "/edit-post/:id" element = {<PostCreateComponent/>} />
